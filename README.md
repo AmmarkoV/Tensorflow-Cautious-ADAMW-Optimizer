@@ -4,7 +4,7 @@ This is an implementation for the paper : [Cautious Optimizers: Improving Traini
 
 ### Creating a python environment
 
-To create a python3 venv to try this:
+To create a python3 venv you can give the following commands:
 ```
 sudo apt install python3-venv python3-pip
 python3 -m venv venv
@@ -16,7 +16,7 @@ python3 -m pip install tensorflow==2.18.0 tf_keras
 
 ### Test
 
-To perform a small check and see if the optimizer use:
+To perform a small check and see if the optimizer works use:
 ```
 source venv/bin/activate
 python3 AdamWCautious.py
