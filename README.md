@@ -1,6 +1,6 @@
 # Tensorflow-Cautious-ADAMW-Optimizer
 
-This is an implementation for the paper : Cautious Optimizers (C-Optiom): Improving Training with One Line of Code
+This is an implementation for the paper : [Cautious Optimizers (C-Optiom): Improving Training with One Line of Code](https://arxiv.org/abs/2411.16085)
 
 To create a python3 venv to try this:
 ```
