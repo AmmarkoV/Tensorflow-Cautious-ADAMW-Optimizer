@@ -124,11 +124,20 @@ class AdamWCautious(optimizer.Optimizer):
             self.assign(v_hat, ops.maximum(v_hat, v))
             v = v_hat
 
+        """
         if self.caution:
             # Apply caution behavior: mask based on gradient direction and apply cautious update.
             mask = (m * gradient > 0).to(gradient.dtype)
             mask.div_(mask.mean().clamp_(min=1e-3))
             m = m * mask
+        """
+        if self.caution:
+            mask = ops.cast(ops.greater(m * gradient, 0), gradient.dtype)
+            mask_mean = ops.mean(mask) + 1e-10
+            mask_mean = ops.maximum(mask_mean, 1e-3)
+            mask = mask / mask_mean
+            m = m * mask
+
 
         self.assign_sub(
             variable,
