@@ -1,5 +1,5 @@
 #This is a Python Tensorflow 2.18.+ implementation of the Cautious optimizers paper
-#Written by Ammar Qammaz, with boilerplate code from ChatGPT
+#Written by Ammar Qammaz a.k.a. AmmarkoV (ammar.gr), with boilerplate code from ChatGPT
 #Based on the template of https://github.com/keras-team/keras/blob/v3.8.0/keras/src/optimizers/adam.py
 #For an original implementation see: https://github.com/kyleliang919/C-Optim
 #PyTorch implementation https://github.com/huggingface/pytorch-image-models/blob/main/timm/optim/adamw.py#L132-L136
